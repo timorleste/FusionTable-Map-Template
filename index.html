@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,19 +17,30 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   </head>
   <body>
-   
-   <div class='navbar navbar-default navbar-static-top'>
+    <div class='navbar navbar-default navbar-static-top'>
       <div class='container-fluid'>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
-         
-        
-            
-            </div><!--/.nav-collapse -->
-      </div>      
-    
-         <h4>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class='navbar-brand' href='index.html'>Searchable Map Template</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class='active'><a href="index.html">Map</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-md-4'>
+          <p>This is a demo of <a href='http://derekeder.com'>Derek Eder's</a> <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> using Google <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595'>Fusion Tables</a>. Use this section to give a little context to your map.</p>
+          <div class='well'>
+            <h4>
               Address <small>(<a id='find_me' href='#'>find me</a>)</small>
             </h4>
             <p>
@@ -50,10 +59,50 @@
             </p>
 
          
-
-         
             
-  
+          <h4>
+  Recycling services
+</h4>
+<ul class='inputs-list unstyled'>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType1' />
+      <span class='filter-box filter-blue'></span>
+      City drop-off location
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType2' />
+      <span class='filter-box filter-green'></span>
+      Private business
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType3' />
+      <span class='filter-box filter-red'></span>
+      Hazardous materials
+    </label>
+  </li>
+</ul>  
+            
+            
+            
+            
+            
+            <br />
+            <a class='btn btn-primary' id='search' href='#'>
+              <i class='glyphicon glyphicon-search'></i>
+              Search
+            </a>
+            <a class='btn btn-default' id='reset' href='#'>
+              <i class='glyphicon glyphicon-repeat'></i>
+              Reset
+            </a>
+          </div>
+          <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
+        </div>
         <div class='col-md-8'>
           <noscript>
             <div class='alert alert-info'>
@@ -63,7 +112,7 @@
           </noscript>
           <div id='map_canvas'></div>
           <p class='pull-right'>
-           
+            <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek Eder</a>.
         </p>
         </div>
       </div>
@@ -89,7 +138,7 @@
 
             googleApiKey:       "AIzaSyAf65frWyZqFRPPYXakuoxga881e7Tbg9w",
             locationColumn:     "suco.village",
-            map_center:         [125.5769744, -8.5551305],
+            map_center:         [125.5773, -8.5552],
             locationScope:      "Timor-Leste"
           });
 
@@ -133,3 +182,6 @@
     </script>
   </body>
 </html>
+
+            
+  
