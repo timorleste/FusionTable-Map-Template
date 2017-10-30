@@ -163,7 +163,7 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
-        var type_column = "'suco.village'";
+        var type_column = "'type'";
 var searchType = type_column + " IN (-1,";
 if ( $("#cbType1").is(':checked')) searchType += "1,";
 if ( $("#cbType2").is(':checked')) searchType += "2,";
