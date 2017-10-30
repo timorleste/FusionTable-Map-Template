@@ -37,7 +37,7 @@
                 this.addrMarkerImage = ""
         }
         else
-            this.addrMarkerImage = "images/blue-pushpin.png"
+            this.addrMarkerImage = "images/camstl.png"
 
     	this.currentPinpoint = null;
     	$("#result_count").html("");
